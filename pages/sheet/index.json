@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "sheet":"../../components/sheet/sheet"
+  },
+  "navigationBarTitleText": "歌单"
+}            

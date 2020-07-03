@@ -1,0 +1,25 @@
+/* pages/mine/common/title/title.wxss */
+.music-title {
+  margin-top: 20px;
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.music-left {
+  margin: 15px;
+}
+
+.music-right {
+  margin: 15px;
+}
+
+/*title */
+#title-icon {
+  border-radius: 20%/50%;
+  font-size: 12px;
+  font-weight: 200;
+  margin-top: 10px
+}

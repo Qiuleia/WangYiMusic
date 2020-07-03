@@ -1,0 +1,30 @@
+/* pages/login/index.wxss */
+.login-wrap{
+  overflow: hidden;
+  height: 100vh;
+  background-color: red;
+}
+.login{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.user{
+  background-color: white;
+  padding: 0 20px;
+  margin: 20px auto;
+  width: 400rpx;
+  height: 100rpx;
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+.password{
+  background-color: white;
+  padding: 0 20px;
+  margin: 10px auto;
+  width: 400rpx;
+  height: 100rpx;
+  border: 1px solid blue;
+  border-radius: 10px;
+}

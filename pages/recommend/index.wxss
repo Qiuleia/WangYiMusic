@@ -1,0 +1,37 @@
+/* pages/dayCommend/index.wxss */
+.top{
+  width: 100%;
+  height: 300rpx;
+}
+.img{
+  width: 100%;
+  height: 300rpx;
+}
+.stitle-wrap{
+  position: relative;
+  top: -20px;
+  display: grid;
+  grid-template-columns: 100rpx auto 100rpx;
+}
+.song-title1{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: white;
+  border-top-left-radius: 50%;
+}
+.song-title2{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: white;
+  border-top-right-radius: 50%;
+}
+.song-title{
+   /* right: 40px; */
+  background-color: white;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 20px;
+}
+.songlist{
+  background-color: white;
+}

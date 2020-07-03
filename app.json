@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/mine/index",
+    "pages/find/index",
+    "pages/city/index",
+    "pages/video/index",
+    "pages/sheet/index",
+    "pages/list/index",
+    "pages/lyric/index",
+    "pages/sheetList/index",
+    "pages/recommend/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff0000",
+    "navigationBarTitleText": "我的",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#ff0000",
+    "selectedColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath":"assets/icon/首页.png",
+        "selectedIconPath":"assets/icon/首页1.png"
+      },
+      {
+        "pagePath": "pages/find/index",
+        "text": "发现",
+        "iconPath":"assets/icon/分类.png",
+        "selectedIconPath":"assets/icon/分类1.png"
+      },
+      {
+        "pagePath": "pages/city/index",
+        "text": "云村",
+        "iconPath":"assets/icon/地址.png",
+        "selectedIconPath":"assets/icon/地址1.png"
+      },
+      {
+        "pagePath": "pages/video/index",
+        "text": "视频",
+        "iconPath":"assets/icon/视频.png",
+        "selectedIconPath":"assets/icon/视频1.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "song": "./components/song/song",
+    "scroll": "./components/scroll/scroll"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

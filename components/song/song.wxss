@@ -1,0 +1,44 @@
+/* components/song/song.wxss */
+@import '../../assets/icon/iconfont.wxss';
+.song-wrap{
+  background-color: white;
+  border-top: 1px solid black;
+  padding: 10rpx;
+  position: fixed;
+  bottom: 0;
+  display:grid;
+  grid-template-columns: 100rpx auto 100rpx 100rpx;
+  height: 100rpx;
+  width: 100%;
+  overflow: hidden;
+  line-height: 100rpx;
+}
+.song-img image{
+  width: 100rpx;
+  border-radius: 50%;
+}
+.song-play{
+  text-align: center;
+}
+.song-sheet{
+  text-align: center;
+}
+.iconfont{
+  font-size: 60rpx;
+}
+.checked{
+  position: relative;
+}
+.checked:active::before{
+  position: absolute;
+  top: -20rpx;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50% 30% 30% 50%;
+  background-color: rgba(189, 184, 184, 0.514);
+}

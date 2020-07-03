@@ -1,0 +1,9 @@
+<!--pages/login/index.wxml-->
+
+<view class="login-wrap">
+  <view class="login">
+    <input type="number" class="user" bindblur="getuser" value="{{user}}" placeholder="网易云音乐账户（手机号）"></input>
+    <input password="true" class="password" bindblur="getpass" value="{{password}}" placeholder="密码"></input>
+    <button bindtap="login">登录</button>
+  </view>
+</view>

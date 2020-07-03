@@ -1,0 +1,40 @@
+/* pages/video/index.wxss */
+page{
+  background-color: #999;
+}
+.mv-wrap{
+  background-color: white;
+ 
+  margin-bottom: 10px;
+  padding: 25rpx;
+}
+.mv-wrap image{
+  height: 300rpx;
+  width: 700rpx;
+  border-radius: 10px;
+}
+.text{
+padding-top: 5px;
+}
+.mv-img{
+  position: relative;
+}
+.mv{
+  width: 700rpx;
+  height: 300rpx;
+  border-radius: 10px;
+  position:absolute;
+  top: o;
+  left: 0;
+}
+.btn{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.iconfont{
+  color: white;
+  opacity: .6;
+font-size: 80rpx;
+}

@@ -1,0 +1,33 @@
+/**app.wxss**/
+@import './assets/icon/iconfont.wxss';
+.actived{
+  position: relative;
+}
+.actived:active::before{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(151, 148, 148, 0.589);
+}
+.checked{
+  position: relative;
+}
+.checked:active::before{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(189, 184, 184, 0.514);
+}

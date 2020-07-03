@@ -1,0 +1,33 @@
+<!--pages/lyric/index.wxml-->
+<view class="name" wx:if="{{isShow}}">
+	{{name}}
+</view>
+<view wx:if="{{isShow}}">
+	<image class="image" src="{{img}}"></image>
+</view>
+<view class="control-wrap" wx:if="{{isShow}}">
+	<view class="tiem-wrap">
+		<view class="leftTime">
+			{{currentTime}}
+		</view>
+		<slider id="slider" min="0" max='{{end}}' value="{{start}}" block-size="12"></slider>
+		<view class="rightTime">
+			{{endTime}}
+		</view>
+	</view>
+
+	<view class="control">
+		<view class="left actived" bindtap="pre" >
+		<text class="iconfont icon-shangyishoushangyige">
+		</text></view>
+		<view class="centert" wx:if="{{isTrue}}" capture-bind:tap ="play">
+		<text class="iconfont icon-icon_bofang"></text>
+		</view>
+		<view class="centert" wx:else capture-bind:tap ="play" >
+		<text class="iconfont icon-bofang"></text>
+		</view>
+		<view class="right actived" bindtap="next">
+		<text class="iconfont icon-xiayigexiayishou"></text>
+		</view>
+	</view>
+</view>

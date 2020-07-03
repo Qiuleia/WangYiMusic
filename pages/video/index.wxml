@@ -1,0 +1,18 @@
+<!--pages/video/index.wxml-->
+<scroll>
+<tab title="{{videos}}" bind:checked="checked"></tab>
+<block wx:for="{{video}}" wx:key="item">
+	<view class="mv-wrap">
+		<view class="mv-img checked">
+			<video src="{{url}}" controls="true" class="mv"  wx:if="{{isShow==item.id}}"
+			 autoplay="true"></video>
+			<image src="{{item.cover}}"  id="{{item.id}}" bind:tap="play" ></image>
+			<view class="btn"  id="{{item.id}}"  capture-catch:tap="play"  wx:if="{{isShow!=item.id}}" >
+				<text class="iconfont icon-bofang1"></text>
+				</view>
+		</view>
+		<view class="text">{{item.name}}</view>
+	</view>
+</block>
+</scroll>
+<song id="song"></song>

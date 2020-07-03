@@ -1,0 +1,126 @@
+<!--pages/find/index.wxml-->
+<scroll>
+<swiper class="banner" autoplay="true" circular="true" indicator-dots="true" interval="2000">
+	<swiper-item wx:for="{{pic}}" wx:key="item">
+		<image src="{{item}}"></image>
+	</swiper-item>
+</swiper>
+<!-- mune -->
+<view class="mune">
+	<view bindtap="navRecom">
+		<view class="mune-icon">
+		<text  class="iconfont icon-rili"></text>
+		</view>
+		<text class="mune-text">每日推荐</text>
+	</view>
+	<view bindtap="navSheet">
+		<view class="mune-icon ">
+		<text  class="iconfont icon-biaodan2"></text>
+		</view>
+		<text class="mune-text">歌单</text>
+	</view>
+	<view bindtap="navList">
+		<view class="mune-icon ">
+		<text  class="iconfont icon-junhengqi"></text>
+		</view>
+		<text class="mune-text">排行榜</text>
+	</view>
+	<view bindtap="navLyric">
+		<view class="mune-icon ">
+		<text  class="iconfont icon-DND_mode"></text>
+		</view>
+		<text class="mune-text">电台</text>
+	</view>
+	<view bindtap="navLyric">
+		<view class="mune-icon ">
+		<text  class="iconfont icon-wangwang"></text>
+		</view>
+		<text class="mune-text">直播</text>
+	</view>
+
+</view>
+
+
+<!-- sheet -->
+<title>
+	<text slot="left">歌单精选站</text>
+	<button size="mini" slot="right" plain="true" id="title-icon" bindtap="navSheet" >查看更多</button>
+</title>
+<scroll-view scroll-x>
+	<view class="sheet-wrap">
+		<block wx:for="{{sheetList}}" wx:key="item">
+				<card text ="{{item.name}}" img="{{item.coverImgUrl}}" iId="{{item.id}}}" bind:checked="checked"></card>
+		</block>
+	</view>
+</scroll-view>
+
+
+<!-- song -->
+<title>
+	<text slot="left">每日推荐</text>
+	<button size="mini" slot="right" plain="true" id="title-icon" bindtap="navRecom">查看更多</button>
+</title>
+<scroll-view scroll-x >
+<view class="song-wrap">
+<view class="song">
+	<block wx:for="{{song1}}" wx:key="item">
+		<view class="song-content checked" id="{{item.id}}" bindtap="play">
+			<image class="song-img" src="{{item.picUrl}}"></image>
+			<view class="song-title">{{item.name}}</view>
+			<view class="song-icon">
+			<text class="iconfont icon-bofang songicon"></text>
+			</view>
+		</view>
+	</block>
+</view>
+<view class="song">
+	<block wx:for="{{song2}}" wx:key="item">
+		<view class="song-content checked" id="{{item.id}}">
+			<image class="song-img" src="{{item.picUrl}}"></image>
+			<view class="song-title">{{item.name}}</view>
+			<view class="song-icon">icon</view>
+		</view>
+	</block>
+</view>
+<view class="song">
+	<block wx:for="{{song3}}" wx:key="item">
+		<view class="song-content checked" id="{{item.id}}">
+			<image class="song-img" src="{{item.picUrl}}"></image>
+			<view class="song-title">{{item.name}}</view>
+			<view class="song-icon">icon</view>
+		</view>
+	</block>
+</view>
+</view>
+</scroll-view>
+
+
+<!-- sheet live -->
+<title>
+	<text slot="left">热门歌单</text>
+	<button size="mini" slot="right" plain="true" id="title-icon" bindtap="navSheet">查看更多</button>
+</title>
+<scroll-view scroll-x>
+	<view class="sheet-wrap">
+		<block wx:for="{{sheetHotList}}" wx:key="item">
+				<card text ="{{item.name}}" img="{{item.coverImgUrl}}" iId="{{item.id}}}" bind:checked="checked"></card>
+		</block>
+	</view>
+</scroll-view>
+
+
+<!-- sheet -->
+<title>
+	<text slot="left">你的歌单精选站</text>
+	<button size="mini" slot="right" plain="true" id="title-icon">查看更多</button>
+</title>
+<scroll-view scroll-x>
+	<view class="sheet-wrap1">
+	
+		<block wx:for="{{sheetRec}}" wx:key="item">
+				<card text ="{{item.name}}" img="{{item.picUrl}}" iId="{{item.id}}}" bind:checked="checked"></card>
+		</block>
+	</view>
+</scroll-view>
+</scroll>
+<song id="song"></song>

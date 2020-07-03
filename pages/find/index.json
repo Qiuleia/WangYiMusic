@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "title":"../../pages/mine/common/title/title",
+    "card":"../../components/list-card/listCard"
+  },
+  "navigationBarTitleText": "发现"
+
+}

@@ -1,0 +1,26 @@
+<!--pages/dayCommend/index.wxml-->
+<scroll>
+<view class="top">
+	<image class="img" src="../../assets/image/1.jpg" mode="widthFit" ></image>
+</view>
+<view class="song-wrap">
+	<view class="stitle-wrap">
+		<view class="song-title1"> </view>
+		<view class="song-title">每日推荐</view>
+		<view class="song-title2"> </view>
+	</view>
+	<view class="songlist">
+		<block wx:for="{{sheetList}}" wx:key="item">
+			<sheet flag="{{index}}" bind:getSong="getSong">
+				<text slot="num">{{index+1}}</text>
+				<text slot="song" style="text-overflow: ellipsis; width:100%">{{item.song}}</text>
+				<text slot="user">{{item.user}}</text>
+				<!-- 播放图标 -->
+				<text slot="icon1"></text>
+				<text slot="icon2"></text>
+			</sheet>
+		</block>
+	</view>
+</view>
+</scroll>
+<song id="song"></song>

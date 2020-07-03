@@ -1,0 +1,12 @@
+<!--pages/list/index.wxml-->
+<scroll>
+<title>
+	<text slot="left">榜单推荐</text>
+</title>
+<view class="card-wrap">
+<block wx:for="{{list}}" wx:key="item">
+<card text ="{{item.name}}" img="{{item.coverImgUrl}}" iId="{{item.id}}" bind:checked="checked"></card>
+</block>
+</view>
+</scroll>
+<song id="song"></song>

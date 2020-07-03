@@ -1,0 +1,4 @@
+<!--components/scroll/scroll.wxml-->
+<scroll-view scroll-y="true" class="scroll">
+<slot></slot>
+</scroll-view>

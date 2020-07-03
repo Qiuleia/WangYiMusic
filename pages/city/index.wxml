@@ -1,0 +1,15 @@
+<!--pages/city/index.wxml-->
+<scroll>
+<view class="title">云村热评墙</view>
+<view class="text-wrap" wx:for="{{list}}" wx:key="item">
+	<view class="user">
+  <view class="userImg">
+  <image src="{{item.simpleUserInfo.avatar}}" mode="widthFix"></image>
+  </view>
+  <view class="userName">{{item.simpleUserInfo.nickname}}</view>
+  </view>
+  <view class="text">{{item.content}}</view>
+
+</view>
+</scroll>
+<song id="song"></song>

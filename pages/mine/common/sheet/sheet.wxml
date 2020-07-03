@@ -1,0 +1,10 @@
+<!--pages/mine/common/sheet/sheet.wxml-->
+	<view class="sheet-content" bindtap="sheetbtn" >
+			<image class="sheet-img" src="{{url}}">
+			</image>
+			<view class="sheet-title">
+		
+            <slot name="title"></slot>
+   
+			</view>
+		</view>

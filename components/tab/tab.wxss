@@ -1,0 +1,17 @@
+/* components/tab/tab.wxss */
+.mune--wrap{
+  display: flex;
+  flex-wrap: nowrap;
+  line-height: 70rpx;
+
+}
+.mune--wrap view{
+  white-space: nowrap;
+  margin: 10px;
+}
+scroll-view{
+  width: 100%;
+} 
+.checked{
+  border-bottom: 2px solid black;
+}

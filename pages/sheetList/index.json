@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "tab":"../../components/tab/tab",
+    "card":"../../components/list-card/listCard"
+  },
+  "navigationBarTitleText": "歌单榜"
+}

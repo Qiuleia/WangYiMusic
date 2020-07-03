@@ -1,0 +1,7 @@
+<!--pages/mine/common/card/card.wxml-->
+	<view class="music-card checked" data-id="{{sheetId}}" id="{{sheetId}}" bindtap="checked">
+			<view class="card1"><slot name="top"></slot></view>
+			<view class="card2"><slot name="icon"></slot></view>
+			<view class="card3"><slot name="text"></slot></view>
+			<view class="card4"><slot name="bottom"></slot></view>
+		</view>

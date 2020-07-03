@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "title":"./common/title/title",
+    "card":"./common/card/card",
+    "sheet":"./common/sheet/sheet"
+  },
+  "navigationBarTitleText": "我的"
+}

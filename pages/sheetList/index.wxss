@@ -1,0 +1,8 @@
+/* pages/sheetList/index.wxss */
+.card-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.more{
+  text-align: center;
+}

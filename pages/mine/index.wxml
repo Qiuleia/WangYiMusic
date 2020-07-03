@@ -1,0 +1,44 @@
+<!--pages/mine/index.wxml-->
+<scroll>
+<view class="login-wrap">
+	<view class="user">
+		<image class="user-img" src="{{userImg}}"></image>
+		<text class = "user-name">{{username}}</text>
+	</view>
+	<view>
+		<button wx:if="{{!islog}}" style="width:150rpx; height:50rpx ;font-size:10px; padding:0; border-radius:15px; line-height:50rpx" bindtap="login">立即登录</button>
+		<button wx:if="{{islog}}" style="width:150rpx; height:50rpx ;font-size:10px; padding:0; border-radius:15px; line-height:50rpx" bindtap="logout">退出</button>
+	</view>
+</view>
+<view class="music-wrap">
+	<title>
+		<text slot="left">我的音乐</text>
+	</title>
+	<scroll-view scroll-x="true" style="width:100%;">
+		<view class="card-wrap">
+		<block wx:for="{{card}}" wx:key="item">
+				<card sheetId="{{item.id}}" bind:sheetbtn="sheetbtn">
+					<text slot="icon" class="iconfont {{item.icon}}"></text>
+					<text slot="text">{{item.text}}</text>
+					<text slot="bottom">{{item.mode}}</text>
+				</card>
+		</block>
+		
+		</view>
+	</scroll-view>
+</view>
+
+<view class="sheet-wrap">
+	<title>
+		<text slot="left">我的歌单</text>
+	</title>
+	<view class="sheet-wrap2" >
+	<block wx:for="{{sheet}}" wx:key='item'>
+		<sheet class="checked" url="{{item.img}}" flag="{{item.id}}" bind:sheetbtn="sheetbtn">
+			<text slot="title">{{item.name}}</text>
+	</sheet>
+	</block>
+	</view>
+</view>
+</scroll>
+<song id="song"></song>

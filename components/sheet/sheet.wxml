@@ -1,0 +1,20 @@
+<!--components/sheet/sheet.wxml-->
+<view class="song-list checked" bindtap="play">
+	<view class="song-num">
+		<slot name="num"></slot>
+	</view>
+	<view class="song-info">
+		<view class="song-name">
+			<slot name="song"></slot>
+		</view>
+		<view class="song-user">
+			<slot name="user"></slot>
+		</view>
+	</view>
+	<view class="song-icon1">
+		<slot name="icon1"></slot>
+	</view>
+	<view class="song-icon2">
+		<slot name="icon2"></slot>
+	</view>
+</view>

@@ -1,0 +1,42 @@
+/* pages/mine/common/card/card.wxss */
+.music-card{
+  width: 200rpx;
+  height: 300rpx;
+  background-color: #d8d1d1;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  font-size: 10px;
+  justify-content: center;
+  align-content: center;
+}
+.card1{
+  align-self: start;
+}
+.card2{
+  align-self: end;
+}
+.card3{
+  align-self: start;
+}
+.card4{
+  align-self: center;
+}
+.checked{
+  position: relative;
+}
+.checked:active::before{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(189, 184, 184, 0.514);
+}

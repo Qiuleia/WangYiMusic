@@ -1,0 +1,7 @@
+<!--pages/mine/common/title/title.wxml-->
+	<view class="music-title">
+		<view class="music-left">
+			<slot name="left"></slot>
+		</view>
+		<view class="music-right">	<slot name="right"></slot></view>
+	</view>

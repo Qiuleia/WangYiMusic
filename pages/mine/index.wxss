@@ -1,0 +1,88 @@
+/* pages/mine/index.wxss */
+.login-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx 40rpx;
+}
+.user{
+  position: relative;
+}
+.user-img{
+  
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.user-name{
+  position: absolute;
+  top: 40rpx;
+  left: 140rpx;
+  width: 500rpx;
+  font-size: 10px;
+  line-height: 50rpx;
+}
+
+
+
+
+/* card */
+.card-wrap{
+  display: flex;
+  width: 1200rpx;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.music-card{
+  margin-left: 15px;
+  width: 200rpx;
+  height: 300rpx;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  font-size: 10px;
+  justify-content: center;
+  align-content: center;
+}
+.card1{
+  align-self: start;
+}
+.card2{
+  align-self: end;
+}
+.card3{
+  align-self: start;
+}
+.card4{
+  align-self: end;
+}
+
+/* sheet */
+
+.sheet-wrap2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.sheet-content{
+  padding: 10px;
+  display: flex;
+
+}
+.sheet-title{
+  height: 150rpx;
+}
+.sheet-img{
+  width: 200rpx;
+  height: 150rpx;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+.sheet-describe{
+  font-size: 10px;
+}
+.sheet-contunt{
+  position: relative;
+  font-size: 10px;
+}

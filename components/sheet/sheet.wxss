@@ -1,0 +1,39 @@
+/* components/sheet/sheet.wxss */
+.song-list{
+  display: grid;
+  grid-template-columns: 100rpx auto 100rpx 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.song-name{
+  height: 80rpx;
+  width: 450rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: left;
+  line-height: 80rpx;
+  font-size: 16px;
+}
+.song-user{
+  text-align: left;
+  margin-top: -5px;
+  font-size: 10px;
+  line-height: 20rpx;
+  margin-bottom: 0;
+}
+.checked{
+  position: relative;
+}
+.checked:active::before{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(189, 184, 184, 0.514);
+}

@@ -1,0 +1,8 @@
+<!--components/list-card/listCard.wxml-->
+
+<view class="sheet-content " bindtap="checked" id="{{iId}}">
+	<view class="sheet-card checked">
+		<image src="{{img}}"></image>
+	</view>
+	<view class="sheet-text">{{text}}</view>
+</view>

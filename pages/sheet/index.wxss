@@ -1,0 +1,79 @@
+/* pages/sheet/index.wxss */
+page{
+  background-color: white;
+}
+.sheet-top{
+  background-color: rgb(184, 178, 178);
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
+.sheet-img image{
+  width: 300rpx;
+  border-radius: 20rpx;
+}
+.sheet-title{
+  position: relative;
+}
+.sheet-text{
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.sheet-user{
+  position: relative;
+}
+.sheet-name-img image{
+  width: 80rpx;
+  border-radius: 50%;
+}
+.sheet-name{
+position: absolute;
+top: 20rpx;
+left: 100rpx;
+}
+.sheet-description{
+  font-size: 12px;
+ box-sizing: content-box;
+  padding: 5px;
+  padding-right: 5px;
+  position: absolute;
+  /* bottom: 10px; */
+  width: 90%;
+  height: 60rpx;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+ 
+}
+
+/* song */
+.stitle-wrap{
+  background-color: rgb(184, 178, 178);
+  display: grid;
+  grid-template-columns: 100rpx auto 100rpx;
+}
+.song-title1{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: white;
+  border-top-left-radius: 50%;
+}
+.song-title2{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: white;
+  border-top-right-radius: 50%;
+}
+.song-title{
+   /* right: 40px; */
+  background-color: white;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 20px;
+}
+.songlist{
+  background-color: white;
+}

@@ -1,0 +1,38 @@
+<!--pages/sheet/index.wxml-->
+<scroll>
+	<view class="sheet-top" wx:if="{{isShow}}">
+		<view class="sheet-img">
+			<image src="{{title.img}}" mode="widthFix"></image>
+		</view>
+		<view class="sheet-title">
+			<view class="sheet-text">{{title.title}}</view>
+			<view class="sheet-name-img">
+				<view class="sheet-user">
+					<image src="{{title.userImg}}" mode="widthFix"></image>
+					<text class="sheet-name" >{{title.userName}}</text>
+				</view>
+			</view>
+			<text class="sheet-description">{{title.description}}</text>
+		</view>
+	</view>
+	<view class="song-wrap" wx:if="{{isShow}}">
+		<view class="stitle-wrap">
+			<view class="song-title1"> </view>
+			<view class="song-title">音乐列表</view>
+			<view class="song-title2"> </view>
+		</view>
+		<view class="songlist">
+			<block wx:for="{{sheetList}}" wx:key="item">
+				<sheet flag="{{index}}" bind:getSong="getSong">
+					<text slot="num">{{index+1}}</text>
+					<text slot="song" style="text-overflow: ellipsis; width:100%">{{item.song}}</text>
+					<text slot="user">{{item.user}}</text>
+					<!-- 播放图标 -->
+					<text slot="icon1"></text>
+					<text slot="icon2"></text>
+				</sheet>
+			</block>
+		</view>
+	</view>
+</scroll>
+<song id="song"></song>

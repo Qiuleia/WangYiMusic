@@ -1,0 +1,37 @@
+/* components/list-card/listCard.wxss */
+.sheet-content {
+  margin-top: 10px;
+  /* margin-left: 10px; */
+  margin-bottom: 30px;
+  width: 220rpx;
+  height: 250rpx;
+}
+.sheet-card image{
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 10px;
+}
+.sheet-text{
+  width: 220rpx;
+  height: 50rpx;
+  white-space: nowrap;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.checked{
+  position: relative;
+}
+.checked:active::before{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(189, 184, 184, 0.514);
+}

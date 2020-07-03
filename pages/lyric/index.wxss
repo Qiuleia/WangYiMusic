@@ -1,0 +1,83 @@
+/* pages/lyric/index.wxss */
+.name{
+  position: absolute;
+  top: 50rpx;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+.image{
+  width: 500rpx;
+  height: 500rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 220rpx;
+  margin: auto;
+  left: 0;
+  right: 0;
+  /* animation: rotate 10s linear infinite; */
+}
+@keyframes rotate{
+  from{
+   transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.control-wrap{
+  height: 350rpx;
+  width: 100vw;
+  /* background-color: black; */
+  position: fixed;
+  bottom: 0;
+}
+.control{
+  width: 100vw;
+  height:250rpx;
+  position: absolute;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'a b c d e'
+                       'f g h i j'
+                       'k l m n o';
+  justify-items: center;
+  align-items: center;
+}
+.left{
+  grid-area: g;
+}
+
+.centert{
+  grid-area: h;
+
+}
+.right{
+  grid-area: i;
+}
+
+.tiem-wrap{
+  width: 750rpx;
+  height: 100rpx;
+  display: grid;
+  grid-template-columns: 125rpx 500rpx 125rpx;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: 'a b c';
+} 
+.leftTime{
+  grid-area: a;
+}
+#slider{
+  width: 100%;
+  grid-area: b;
+
+}
+.rightTime{
+  grid-area: c;
+}
+.iconfont{
+  font-size: 100rpx;
+}

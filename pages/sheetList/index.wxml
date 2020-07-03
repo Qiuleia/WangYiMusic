@@ -1,0 +1,11 @@
+<!--pages/sheetList/index.wxml-->
+<scroll>
+<tab title="{{tabList}}" bind:checked="checked"></tab>
+<view class="card-wrap">
+<block wx:for="{{sheetList}}" wx:key="item">
+<card text ="{{item.name}}" img="{{item.coverImgUrl}}" iId="{{item.id}}" bind:checked="navSheet"></card>
+</block>
+</view>
+<view wx:if="{{!isHave}}" class="more" >--没有更多数据--</view>
+</scroll>
+<song id="song"></song>

@@ -1,0 +1,6 @@
+<!--components/tab/tab.wxml-->
+<scroll-view scroll-x>
+<view class="mune--wrap" >
+<view wx:for="{{title}}" wx:key="index" class="{{index==currentIndex?'checked':''}}"  bindtap="checked" data-index="{{index}}" data-id="{{index}}" data-title="{{item}}">{{item}} </view>
+</view>
+</scroll-view>

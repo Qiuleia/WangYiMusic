@@ -1,0 +1,16 @@
+<!--components/song/song.wxml-->
+<view  class="song-wrap" bindtap="songNavTo">
+	<view class="song-img">
+		<image src="{{songInfo.img}}" mode="widthFix"></image>
+	</view>
+	<view class="song-name">
+		{{songInfo.name}}
+	</view>
+	<view class="song-play" bindtap="play">
+		<text class="iconfont icon-bofang" wx:if="{{!isShow}}"  catchtap="play"></text>
+		<text class="iconfont icon-icon_bofang" wx:if="{{isShow}}" catchtap="pause"></text>
+	</view>
+	<view class="song-sheet checked">
+	<text class="iconfont icon-chakantiezigengduo " catchtap="navSheet"></text>
+	</view>
+</view>

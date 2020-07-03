@@ -1,0 +1,4 @@
+/* components/scroll/scroll.wxss */
+.scroll{
+  height: calc(100vh - 100rpx);
+}
